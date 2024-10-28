@@ -1,15 +1,9 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/index.js",   // Cambia esto si tu archivo de entrada es diferente
-      "use": "@vercel/node"    // Usar Vercel para Node.js
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/index.js"  // Cambia esto si tu archivo de entrada es diferente
+      "dest": "/api/index.js"
     }
   ]
 }
