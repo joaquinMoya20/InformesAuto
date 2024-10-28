@@ -10,10 +10,10 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.urlencoded({ extended: true }));
 
-// Ruta para el formulario
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'index.html'));
+    res.sendFile(path.join(__dirname, '../views', 'index.html'));
 });
+
 
 // Ruta para generar el informe
 app.post('/generateReport', (req, res) => {
